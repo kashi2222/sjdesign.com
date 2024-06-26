@@ -1,0 +1,521 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --primary-color: #f50045;
+    --secondary-color: #000;
+    --bar-height: 1.5rem;
+  }
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    max-width: 810px;
+    margin: 0 auto;
+}
+/* Header css start */
+header{
+    background-color:#FFD4D0;
+}
+.header_holder_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.menu_wrapper .menu_list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 0px;
+}
+.menu_wrapper .menu_list li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+.button_wrapper a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background: black;
+    padding: 12px 25px;
+}
+.header_contents{
+    display: flex;
+}
+.header_contents_text{
+    width: 45%;
+    padding-top: 30px;
+}
+.header_contents_image{
+    width: 55%;
+}
+.header_contents_image img{
+    max-width: 100%;
+}
+.header_contents_text h4{
+    font-size: 20px;
+}
+.header_contents_text h1{
+    font-size: 48PX;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-align: left;
+}
+.header_contents_text h2{
+    font-size: 48px;
+    color: #FC3314;
+    font-weight: bold;
+    line-height: 1.5;
+
+}
+.header_contents_text p{
+    max-width: 457px;
+    text-align: left;
+    margin: unset;
+}
+.hire_port_btns{
+    display: flex;
+    column-gap: 20px;
+    padding: 20px 0px 80px 0px;
+}
+.hire_btn{
+    background: black;
+    padding: 12px 55px;
+    border: 1px solid #000000;
+}
+.hire_btn a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+.port_btn{
+    background: white;
+    padding: 12px 55px;
+    border: 1px solid #000000;
+}
+.port_btn a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+}
+/* Header css end */
+/* About me css start */
+.about_me {
+    background-color: #000000;
+    text-align: center;
+    padding: 64px 188px 188px 80px;
+}
+.about_me_content h1 {
+    color: #ffffff;
+}
+
+.about_me_content p{
+    color: #ffffff;
+}
+#counter{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    width: 100%;
+  }
+  #counter .item{
+    padding: 35px 40px;
+  } 
+  #counter .item .count{
+    color: #FFD4D0;
+    margin-bottom: 5px;
+    font-size: 40px;
+  }
+  .item_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item_details span{
+    color: #FFD4D0;
+    font-size: 40px;
+  }
+  #counter .item h3{
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* About me css end */
+  /* Services sec start */
+  section.services_sec {
+    padding: 64px 0px;
+}
+.services_holder h1 {
+    margin-bottom: 0;
+}
+.services_holder p{
+    padding-top: 24px;
+}
+.services_details_holder{
+    padding-top: 42px;
+}
+.services_item h3{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 24px;
+}
+.services_item p{
+    text-align: left;
+}
+.image_effects{
+    background-image: url(../images/hover_img.png);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: 25%;
+    height: 321px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 30px;
+    position: relative;
+
+}
+.hover_buttons{
+    display: flex;
+    column-gap: 15px;
+}
+.hover_buttons a {
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    column-gap: 20px;
+    display: none;
+}
+.image_effects .hover_buttons a {
+    display: none;
+}
+
+.image_effects:hover .hover_buttons a {
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.image_effects:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 63.53%, rgba(0, 0, 0, 0.49) 100%);
+    top: 0;
+    left: 0;
+}
+/* Services sec end */
+/* portfolio css start */
+.portfolio{
+    background: linear-gradient(180deg, rgba(255,212,208,1) 30%, rgba(247,247,247,1) 20%);
+    padding: 50px 0px 142px 0px;
+}
+.portfolio_content{
+    padding-bottom: 20px;
+}
+.images_content_wrapper .row{
+ row-gap: 64px;
+}
+.images_content_details img{
+    max-width: 100%;
+}
+.images_content_details h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 32px;
+}
+.images_description{
+    display: flex;
+    align-items: baseline;
+    max-width: 355px;
+    justify-content: space-between;
+}
+.images_description p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: initial;
+}
+/* portfolio css end */
+/* skills section css start*/
+.skills{
+    padding: 90px 0px;
+    background-color: #F7F7F7;
+}
+/* progess bars */
+.progress_bars{
+    display: flex;
+    padding-top: 64px;
+}
+.ce_ixelgen_progress_bar {
+    max-width: 472px;
+    margin: 0 auto;
+  }
+  
+  .ce_ixelgen_progress_bar .progress_bar_item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ce_ixelgen_progress_bar .item_label,
+  .ce_ixelgen_progress_bar .item_value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1F1F1F;
+    line-height: 24px;
+  }  
+  .ce_ixelgen_progress_bar .item_bar {
+    position: relative;
+    height:5px;
+    width: 100%;
+    background-color: #E1E1E1;
+    border-radius: 4px;
+  }
+  
+  .ce_ixelgen_progress_bar .item_bar .progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height:5px;
+    margin: 0;
+    background-color: #1F1F1F;
+    border-radius: 4px;
+    transition: width 100ms ease;
+  }
+  .progress_one,.progress_two{
+    width: 50%;;
+  }
+  .progress_bar_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .progress_btn{
+    text-align: center;
+    padding-top: 30px;
+  }
+  button.progress_bar_btn {
+    padding: 10px 20px;
+    border: navajowhite;
+    background: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* skills section css end */
+/* Testimonial section css start */
+.testimonial{
+    padding: 90px 0px 64px 0px;
+    background-color: #FFD4D0;
+}
+.author_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 368px;
+    margin: 0 auto;
+    column-gap: 15px;
+    padding-top: 32px;
+}
+.author_details p{
+    font-weight: 700;
+}
+.author_details p span{
+    font-weight: 400;
+}
+.testimonial_prev_btn,.testimonial_next_btn{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    z-index: 9999;
+}
+.testimonial_next_btn{
+    right: 0;
+}
+/* Testimobial section css end */
+/* Insights section satrt */
+.insights{
+    padding: 90px 0px;
+    background-color: #F7F7F7;
+}
+.insights_details {
+    padding-top: 48px;
+}
+.insights_inner_details{
+    max-width: 336px;
+   background-color: #ffffff;
+   min-height: 100%;
+   
+}
+.insights_inner_text{
+    padding: 32px 16px 16px 16px;
+}
+.insights_inner_text span{
+    font-size: 12px;
+    font-weight: 400;
+    line-height:18px;
+}
+.insights_inner_text h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 8px;
+}
+.insights_inner_text p{
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    min-height: 84px;
+}
+.insights_inner_text a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-top: 16px;
+}
+.insights_inner_text svg{
+    width: 16px;
+    height: 16px;
+}
+.insights_inner_text div{
+    padding-top: 17px;
+}
+/* insights section end */
+/* Get in touch section css start*/
+.get_in_touch{
+    background-color: #FFD4D0;
+    padding: 124px 0px;
+}
+.get_in_touch_text_wrapper,.get_in_touch_form_wrapper{
+    width: 50%;
+}
+.get_in_touch_wrapper{
+    display: flex;
+}
+.get_in_touch_text_header h1{
+    text-align: left;
+}
+.get_in_touch_text_header p{
+    padding-top: 16px;
+    max-width: 566px;
+    margin: unset;
+    text-align: left;
+}
+.get_in_touch_contact_details{
+    padding-top: 64px;
+}
+.get_in_touch_contact_info{
+    padding-bottom: 32px;
+}
+.get_in_touch_contact_info a{
+    display: flex;
+    column-gap: 16px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.get_in_touch_social{
+    padding-top: 87px;
+}
+.get_in_touch_social{
+    display: flex;
+    column-gap: 24px;
+}
+.get_in_touch_social a{
+    text-decoration: none;
+}
+.get_in_touch_form_wrapper input, textarea {
+    width: 566px;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 0;
+    outline: none; 
+    box-sizing: border-box; 
+    margin-bottom: 24px; 
+  }
+  
+  .get_in_touch_form_wrapper textarea {
+    height: 168px;
+    resize: none; 
+  }
+  .get_in_touch_form_wrapper button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 12px 56px 12px 56px;
+    cursor: pointer;
+    border-radius: 0;
+    outline: none; 
+  }
+/* Get in touch section css end */
+/* footer css start */
+.footer{
+    padding: 80px 0px;
+    background-color: #1F1F1F;
+}
+.footer_wrapper{
+    max-width: 764px;
+    margin: 0 auto;
+}
+.footer_details_wrapper{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.footer_menu_list{
+    display: flex;
+    list-style-type: none;
+    column-gap: 32px;
+}
+.footer_menu_list li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ffffff;
+}
+.footer_social{
+    padding-top: 64px;
+}
+.footer_social p{
+    color: #ffffff;
+}
+.footer_social_items{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+/* footer css end */
